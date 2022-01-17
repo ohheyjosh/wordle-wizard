@@ -10,10 +10,10 @@ a word search tool for a popular browser game
 * Prettier
 
 ## To-do
-- [ ] user input fields for green and yellow hits
+- [ ] user input fields for matches and partials
 - [ ] user input list of misses
 - [ ] list of five-letter English words
-- [ ] regex or similar filter for matches
-- [ ] submit and display for filtered matches
+- [ ] regex or similar filter for matching words
+- [ ] submit and display for matching words
 - [ ] on-screen keyboard
 - [ ] dark mode toggle
