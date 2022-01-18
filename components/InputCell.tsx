@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 export type CharStatus = 'match' | 'partial' | 'miss' | null;
 
 type Props = {
