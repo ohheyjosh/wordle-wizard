@@ -3,8 +3,8 @@ import Layout from '../components/Layout';
 import InputRow from '../components/InputRow';
 
 const IndexPage = () => {
-  const [matches, setMatches] = useState<string>('a____');
-  const [partials, setPartials] = useState<string>('__le_');
+  const [matches, setMatches] = useState<string>('_____');
+  const [partials, setPartials] = useState<string>('_____');
   const [misses, setMisses] = useState<string>('_____');
   const [editing, setEditing] = useState<string>(null);
 
