@@ -8,13 +8,22 @@ const getResults = (matches, partials, misses) => {
   const isMatch = (word) => {
     const splitWord = word.split('');
 
+    // check that all matches and partials are present in word
+    const requiredLetters = [
+      ...splitMatches.filter((char) => char !== '_'),
+      ...splitPartials.filter((char) => char !== '_'),
+    ];
+    if (!requiredLetters.every((letter) => splitWord.includes(letter))) {
+      return false;
+    }
+
     for (const [i, letter] of splitWord.entries()) {
       if (splitMatches[i] !== '_' && splitMatches[i] !== letter) {
         // reject if a match isn't found
         return false;
       }
       if (splitPartials[i] === letter) {
-        // reject if a partial match was found in the place it was guessed in
+        // reject if a partial match is found in the place it was guessed in
         return false;
       }
       if (splitMisses.includes(letter) && !splitMatches.includes(letter)) {
