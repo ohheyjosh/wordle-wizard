@@ -9,10 +9,12 @@ type Props = {
 };
 
 const InputRow = ({ input, onInput, type, editing, setEditing }: Props) => {
-  const splitLetters = input.split('');
-  const changeValue = (id, value) => {
-    console.log(id.slice(-1) + ' ' + value);
-  }
+  const splitLetters = input.toString().split('');
+  const onChange = (id, value) => {
+    splitLetters[Number(id.slice(-1))] = value;
+    onInput(splitLetters.join(''));
+    setEditing(null);
+  };
 
   return (
     <div className="flex justify-center my-1">
@@ -21,7 +23,7 @@ const InputRow = ({ input, onInput, type, editing, setEditing }: Props) => {
           key={index}
           id={type + index}
           value={letter}
-          changeValue={changeValue}
+          changeValue={onChange}
           status={letter.toUpperCase().match(/[A-Z]/) ? type : null}
           editing={editing}
           setEditing={setEditing}
