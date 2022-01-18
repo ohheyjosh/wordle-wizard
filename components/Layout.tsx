@@ -14,7 +14,11 @@ const Layout = ({ children, title = 'Wordle Wizard' }: Props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header className="flex items-center justify-between w-full max-w-xl mx-auto text-center border-b border-gray-600">
-      <a href="https://github.com/ohheyjosh/wordle-wizard" target="_blank">
+      <a
+        href="https://github.com/ohheyjosh/wordle-wizard"
+        target="_blank"
+        rel="noreferrer"
+      >
         <svg
           className="w-9 h-9"
           fill="rgb(75 85 99)"
@@ -44,6 +48,7 @@ const Layout = ({ children, title = 'Wordle Wizard' }: Props) => (
         <a
           href="https://www.heyjo.sh/"
           target="_blank"
+          rel="noreferrer"
           className="font-bold underline"
         >
           Josh Barnett
@@ -52,6 +57,7 @@ const Layout = ({ children, title = 'Wordle Wizard' }: Props) => (
         <a
           href="https://www.powerlanguage.co.uk/wordle/"
           target="_blank"
+          rel="noreferrer"
           className="font-bold underline"
         >
           Wordle application
