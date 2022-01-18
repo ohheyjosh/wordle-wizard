@@ -20,7 +20,7 @@ const InputCell = ({
   return editing !== id ? (
     <button
       className={
-        'flex items-center justify-center w-16 h-16 m-0.5 text-lg font-bold border-2 border-gray-500 ' +
+        'w-16 h-16 text-lg font-bold border-2 border-gray-500 ' +
         (status === 'match'
           ? 'bg-green-500 border-green-500'
           : status === 'partial'
@@ -33,7 +33,7 @@ const InputCell = ({
     </button>
   ) : (
     <input
-      className="flex items-center justify-center w-16 h-16 m-0.5 text-lg font-bold border-2 bg-transparent border-gray-500 uppercase text-center"
+      className="w-16 h-16 text-lg font-bold text-center uppercase bg-transparent border-2 border-gray-500"
       type="text"
       onChange={(event) => changeValue(id, event.target.value)}
       autoFocus
