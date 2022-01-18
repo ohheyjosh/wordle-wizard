@@ -21,7 +21,7 @@ const IndexPage = () => {
 
   return (
     <Layout title="Wordle Wizard">
-      <h2 className="m-2 mt-4 text-xl font-bold sm:ml-24">Enter matches:</h2>
+      <h2 className="m-2 mt-4 text-xl font-bold sm:ml-20">Enter matches:</h2>
       <InputRow
         input={matches}
         onInput={setMatches}
@@ -29,7 +29,7 @@ const IndexPage = () => {
         editing={editing}
         setEditing={setEditing}
       />
-      <h2 className="m-2 mt-4 text-xl font-bold sm:ml-24">
+      <h2 className="m-2 mt-4 text-xl font-bold sm:ml-20">
         Enter partial matches:
       </h2>
       <InputRow
@@ -39,7 +39,7 @@ const IndexPage = () => {
         editing={editing}
         setEditing={setEditing}
       />
-      <h2 className="max-w-lg m-2 mt-4 text-xl font-bold sm:ml-24">
+      <h2 className="max-w-lg m-2 mt-4 text-xl font-bold sm:ml-20">
         Enter misses:
       </h2>
       <InputRow
@@ -49,7 +49,7 @@ const IndexPage = () => {
         editing={editing}
         setEditing={setEditing}
       />
-      <h2 className="m-2 mt-8 text-xl font-bold sm:ml-24">
+      <h2 className="m-2 mt-8 text-xl font-bold sm:ml-20">
         {results.length ? 'Possible answers:' : ''}
       </h2>
       <ul className="grid justify-center w-full max-w-md grid-cols-3 gap-6 px-12 mx-auto mb-12 text-3xl font-bold">
