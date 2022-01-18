@@ -17,8 +17,8 @@ const getResults = (matches, partials, misses) => {
         // reject if a partial match was found in the place it was guessed in
         return false;
       }
-      if (splitMisses.includes(letter)) {
-        // reject if a miss is found
+      if (splitMisses.includes(letter) && !splitMatches.includes(letter)) {
+        // reject if a miss is found and isn't already matched
         return false;
       }
     }
