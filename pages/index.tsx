@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import InputRow from '../components/InputRow';
 
@@ -7,6 +7,15 @@ const IndexPage = () => {
   const [partials, setPartials] = useState<string>('_____');
   const [misses, setMisses] = useState<string>('_____');
   const [editing, setEditing] = useState<string>(null);
+
+  useEffect(() => {
+    const charCount = (type) => {
+      return type.replace(/[^a-z]/g, '').length;
+    };
+    if (charCount(matches) + charCount(partials) + charCount(misses) >= 5) {
+      console.log('ready for filter');
+    }
+  });
 
   return (
     <Layout title="Wordle Wizard">
