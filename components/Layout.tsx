@@ -18,7 +18,28 @@ const Layout = ({ children, title = 'Wordle Wizard' }: Props) => (
         Wordle Wizard
       </h1>
     </header>
-    <main className="w-full max-w-xl mx-auto">{children}</main>
+    <main className="w-full h-full max-w-xl min-h-[75vh] mx-auto">{children}</main>
+    <footer className="w-full max-w-xl mx-auto text-center border-t border-gray-700">
+      <p className="w-full max-w-md mx-auto my-4">
+        This helper tool was made by{' '}
+        <a
+          href="https://www.heyjo.sh/"
+          target="_blank"
+          className="font-bold underline"
+        >
+          Josh Barnett
+        </a>{' '}
+        and has no relationship with the{' '}
+        <a
+          href="https://www.powerlanguage.co.uk/wordle/"
+          target="_blank"
+          className="font-bold underline"
+        >
+          Wordle application
+        </a>{' '}
+        or its author.
+      </p>
+    </footer>
   </div>
 );
 
