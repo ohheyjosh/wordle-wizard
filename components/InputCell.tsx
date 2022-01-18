@@ -20,7 +20,7 @@ const InputCell = ({
   return editing !== id ? (
     <button
       className={
-        'w-16 h-16 text-lg font-bold border-2 border-gray-600 ' +
+        'w-16 h-16 text-3xl font-bold border-2 border-gray-600 ' +
         (status === 'match'
           ? 'bg-green-600 border-green-600'
           : status === 'partial'
@@ -33,7 +33,7 @@ const InputCell = ({
     </button>
   ) : (
     <input
-      className="w-16 h-16 text-lg font-bold text-center uppercase bg-transparent border-2 border-gray-600"
+      className="w-16 h-16 text-3xl font-bold text-center uppercase bg-transparent border-2 border-gray-600"
       type="text"
       onChange={(event) => changeValue(id, event.target.value)}
       autoFocus

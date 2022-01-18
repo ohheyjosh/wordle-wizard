@@ -7,7 +7,7 @@ type Props = {
 };
 
 const Layout = ({ children, title = 'Wordle Wizard' }: Props) => (
-  <div className="flex flex-col h-screen text-gray-100 bg-gray-900">
+  <div className="flex flex-col min-h-screen text-gray-100 bg-gray-900 h-ful">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
