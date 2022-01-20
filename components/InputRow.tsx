@@ -28,7 +28,7 @@ const InputRow = ({ input, onInput, type, editing, setEditing }: Props) => {
           id={type + index}
           value={letter}
           changeValue={onChange}
-          status={letter.toUpperCase().match(/[A-Z]/) ? type : null}
+          status={letter.match(/[A-Z]/) ? type : null}
           editing={editing}
           setEditing={setEditing}
         />
