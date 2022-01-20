@@ -11,8 +11,8 @@ const IndexPage = () => {
   const [results, setResults] = useState<string[]>([]);
 
   useEffect(() => {
-    const charCount = (type) => {
-      return type.replace(/[^a-z]/g, '').length;
+    const charCount = (chars) => {
+      return chars.replace(/_/g, '').length;
     };
     if (charCount(matches) + charCount(partials) + charCount(misses) >= 5) {
       setResults(getResults(matches, partials, misses));
