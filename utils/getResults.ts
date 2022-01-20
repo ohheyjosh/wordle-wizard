@@ -4,16 +4,16 @@ const getResults = (matches, partials, misses) => {
   const splitMatches = matches.split('');
   const splitPartials = partials.split('');
   const splitMisses = misses.replace(/_/g, '').split('');
+  const requiredLetters = [
+    ...splitMatches.filter((char) => char !== '_'),
+    ...splitPartials.filter((char) => char !== '_'),
+  ];
 
   const isMatch = (word) => {
     const splitWord = word.split('');
 
     // check that all matches and partials are present in word
-    const requiredLetters = [
-      ...splitMatches.filter((char) => char !== '_'),
-      ...splitPartials.filter((char) => char !== '_'),
-    ];
-    if (!requiredLetters.every((letter) => splitWord.includes(letter))) {
+    if (!requiredLetters.every((required) => splitWord.includes(required))) {
       return false;
     }
 
