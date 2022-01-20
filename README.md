@@ -15,6 +15,7 @@ a word search tool for a popular browser game
 - [x] list of five-letter English words
 - [x] regex or similar filter for matching words
 - [x] submit and display for matching words
+- [x] simplify casing and matching for device compatibility
 - [ ] indicate somehow that misses are position-agnostic
 - [ ] enable clearing previously filled inputs
 - [ ] properly account for duplicate letters
