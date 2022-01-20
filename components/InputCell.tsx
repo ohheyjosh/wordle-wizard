@@ -35,7 +35,7 @@ const InputCell = ({
     <input
       className="w-16 h-16 text-3xl font-bold text-center uppercase bg-transparent border-2 border-gray-600"
       type="text"
-      onChange={(event) => changeValue(id, event.target.value)}
+      onChange={(event) => changeValue(id, event.target.value.toUpperCase())}
       autoFocus
     />
   );

@@ -3,7 +3,7 @@ import dictionary from './dictionary';
 const getResults = (matches, partials, misses) => {
   const splitMatches = matches.split('');
   const splitPartials = partials.split('');
-  const splitMisses = misses.replace(/[^a-z]/g, '').split('');
+  const splitMisses = misses.replace(/_/g, '').split('');
 
   const isMatch = (word) => {
     const splitWord = word.split('');
