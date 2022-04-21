@@ -51,9 +51,17 @@ const IndexPage = () => {
         editing={editing}
         setEditing={setEditing}
       />
-      <h2 className="m-2 mt-8 text-xl font-bold sm:ml-20">
-        {results.length ? 'Possible answers:' : ''}
-      </h2>
+      {results.length ? (
+        <h2 className="m-2 mt-8 text-xl font-bold sm:mx-20">
+          Possible answers:
+        </h2>
+      ) : (
+        <h3 className="m-2 mt-8 text-xl sm:mx-20">
+          Enter at least 5 letters
+          <br className="sm:hidden" />
+          to see possible answers.
+        </h3>
+      )}
       <ul className="grid justify-center w-full max-w-md grid-cols-3 gap-6 px-12 mx-auto mb-12 text-3xl font-bold">
         {results.map((result, i) => (
           <li key={i} className="text-center uppercase list-none">
