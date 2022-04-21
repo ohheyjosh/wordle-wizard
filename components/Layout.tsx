@@ -42,27 +42,29 @@ const Layout = ({ children, title = 'Wordle Wizard' }: Props) => (
     <main className="w-full h-full max-w-xl min-h-[75vh] mx-auto">
       {children}
     </main>
-    <footer className="w-full max-w-xl mx-auto text-center border-t border-gray-600">
-      <p className="w-full max-w-md mx-auto my-4">
+    <footer className="w-full max-w-xl mx-auto border-t border-gray-600">
+      <p className="w-full max-w-md my-4 text-gray-400">
         This helper tool was made by{' '}
         <a
           href="https://www.heyjo.sh/"
           target="_blank"
           rel="noreferrer"
-          className="font-bold underline"
+          className="font-bold text-gray-100 underline"
         >
           Josh Barnett
-        </a>{' '}
+        </a>
+        <br />
         and has no relationship with the{' '}
         <a
-          href="https://www.powerlanguage.co.uk/wordle/"
+          href="https://www.nytimes.com/games/wordle/index.html"
           target="_blank"
           rel="noreferrer"
-          className="font-bold underline"
+          className="font-bold text-gray-100 underline"
         >
           Wordle application
-        </a>{' '}
-        or its author.
+        </a>
+        ,<br />
+        its author, or The New York Times Company.
       </p>
     </footer>
   </div>
