@@ -43,13 +43,13 @@ const Layout = ({ children, title = 'Wordle Wizard' }: Props) => (
       {children}
     </main>
     <footer className="w-full max-w-xl mx-auto border-t border-gray-600">
-      <p className="w-full max-w-md my-4">
+      <p className="w-full max-w-md my-4 text-gray-400">
         This helper tool was made by{' '}
         <a
           href="https://www.heyjo.sh/"
           target="_blank"
           rel="noreferrer"
-          className="font-bold underline"
+          className="font-bold text-gray-100 underline"
         >
           Josh Barnett
         </a>
@@ -59,7 +59,7 @@ const Layout = ({ children, title = 'Wordle Wizard' }: Props) => (
           href="https://www.nytimes.com/games/wordle/index.html"
           target="_blank"
           rel="noreferrer"
-          className="font-bold underline"
+          className="font-bold text-gray-100 underline"
         >
           Wordle application
         </a>
