@@ -1,6 +1,6 @@
 {
   "name": "wordle-wizard",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a word search tool for a popular browser game",
   "license": "MIT",
   "repository": {
