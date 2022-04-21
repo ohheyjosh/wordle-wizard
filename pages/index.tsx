@@ -58,8 +58,7 @@ const IndexPage = () => {
       ) : (
         <h3 className="m-2 mt-8 text-xl sm:mx-20">
           Enter at least 5 letters
-          <br className="sm:hidden" />
-          to see possible answers.
+          <br className="sm:hidden" /> to see possible answers.
         </h3>
       )}
       <ul className="grid justify-center w-full max-w-md grid-cols-3 gap-6 px-12 mx-auto mb-12 text-3xl font-bold">
